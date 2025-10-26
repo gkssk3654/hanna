@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Hanna Kim — AI Security</title>
+  <meta name="description" content="Academic homepage of Hanna Kim" />
+  <meta name="theme-color" content="#2563eb">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{ --bg:#ffffff; --fg:#1f2937; --muted:#6b7280; --accent:#2563eb; --card:#f8fafc; --border:#e5e7eb; --link:#1d4ed8; --link-hover:#1e40af; }
+    @media (prefers-color-scheme: dark){ :root{ --bg:#0b1220; --fg:#e5e7eb; --muted:#9ca3af; --accent:#60a5fa; --card:#0f172a; --border:#1f2937; --link:#60a5fa; --link-hover:#93c5fd; } img{filter: brightness(0.98) contrast(1.02)} }
+    html{scroll-behavior:smooth}
+    body{margin:0; font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; background:var(--bg); color:var(--fg)}
+    a{color:var(--link); text-decoration:none} a:hover{text-decoration:underline; color:var(--link-hover)}
+    .wrap{max-width:1050px; margin:0 auto; padding:24px}
+    header{display:flex; gap:28px; align-items:center; padding:28px 0 10px; border-bottom:1px solid var(--border)}
+    header img{width:120px; height:120px; object-fit:cover; border-radius:16px; border:1px solid var(--border)}
+    .title{display:flex; flex-direction:column; gap:8px}
+    .title h1{margin:0; font-size:32px; font-weight:800; letter-spacing:-0.01em}
+    .title p{margin:0; color:var(--muted)}
+    .badges{display:flex; flex-wrap:wrap; gap:8px; margin-top:6px}
+    .badge{border:1px solid var(--border); padding:6px 10px; border-radius:999px; font-size:12px; background:var(--card)}
+    .social-icons{display:flex; gap:10px; align-items:center}
+    .social-icons a{display:inline-flex; align-items:center; justify-content:center; width:26px; height:26px; border-radius:8px; background:var(--card); border:1px solid var(--border)}
+    .social-icons a svg{width:16px; height:16px; opacity:0.85; transition:opacity .2s}
+    .social-icons a:hover svg{opacity:1}
+    section{padding:36px 0}
+    h2{font-size:22px; margin:0 0 12px}
+    .muted{color:var(--muted)}
+    .card{border:1px solid var(--border); background:var(--card); border-radius:16px; padding:16px}
+    .grid{display:grid; gap:14px}
+    .grid.cols-1{grid-template-columns:1fr}
+    .grid.cols-2{grid-template-columns:1fr 1fr}
+    .grid.cols-3{grid-template-columns:1fr 1fr 1fr}
+    @media (max-width:880px){ .grid.cols-2, .grid.cols-3{grid-template-columns:1fr}}
+    ul.clean{list-style:none; padding-left:0; margin:0}
+    ul.clean li{padding:12px 0; border-bottom:1px dashed var(--border)}
+    ul.clean li:last-child{border-bottom:none}
+    .pub{display:grid; grid-template-columns:80px 1fr; gap:14px; align-items:center}
+    .pub .tag{justify-self:start; font-size:12px; border:1px solid var(--border); padding:4px 8px; border-radius:999px; background:var(--bg)}
+    .pub .meta{font-size:14px}
+    .pub b{font-weight:600}
+    footer{border-top:1px solid var(--border); margin-top:28px; padding-top:16px; font-size:14px; color:var(--muted)}
+  </style>
+</head>
+<body id="top">
+  <div class="wrap">
+    <header>
+      <img src="https://avatars.githubusercontent.com/u/000?v=4" alt="profile" />
+      <div class="title">
+        <div class="social-icons" aria-label="Profile quick links">
+          <a href="mailto:gkssk3654@kaist.ac.kr" aria-label="Email">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M2 6.5A2.5 2.5 0 0 1 4.5 4h15A2.5 2.5 0 0 1 22 6.5v11A2.5 2.5 0 0 1 19.5 20h-15A2.5 2.5 0 0 1 2 17.5v-11Zm2.3-.5 7.7 5.4L19.7 6H4.3Zm15.2 2.1-7.3 5.1a1 1 0 0 1-1.1 0L3.8 8.1V17.5c0 .55.45 1 1 1h14.4c.55 0 1-.45 1-1V8.1Z"/></svg>
+          </a>
+          <a href="https://www.linkedin.com/in/hanna-kim-hanna/" target="_blank" rel="noopener" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4.98 3.5C4.98 4.88 3.86 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM.5 8h4V23h-4V8zm7.5 0h3.8v2.05h.05c.53-1 1.83-2.05 3.76-2.05 4.02 0 4.77 2.65 4.77 6.1V23h-4v-7.1c0-1.7-.03-3.88-2.36-3.88-2.36 0-2.72 1.84-2.72 3.75V23h-4V8z"/></svg>
+          </a>
+          <a href="https://scholar.google.com/citations?user=-89JwZUAAAAJ" target="_blank" rel="noopener" aria-label="Google Scholar">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 3 1 9l11 6 9-4.91V17h2V9L12 3Zm0 9.73L5.15 9 12 5.27 18.85 9 12 12.73Zm-6 3.27v2c0 2.21 2.69 4 6 4s6-1.79 6-4v-2c-1.61 1.3-3.97 2-6 2s-4.39-.7-6-2Z"/></svg>
+          </a>
+        </div>
+        <h1>Hanna Kim</h1>
+        <p>Ph.D. student, KAIST (EE), advised by Prof. <a href="https://nss.kaist.ac.kr/" target="_blank" rel="noopener">Seongwon Shin</a></p>
+        <div class="badges">
+          <span class="badge">LLM Security</span><span class="badge">AI for Cybersecurity</span><span class="badge">Data-driven Security</span>
+        </div>
+      </div>
+    </header>
+
+    <section id="about">
+      <h2>About</h2>
+      <div class="card">
+        <p>Hello, I'm Hanna. I’m a third-year Ph.D. student at KAIST, advised by Prof. <a href="https://nss.kaist.ac.kr/" target="_blank" rel="noopener">Seongwon Shin</a> and working closely with Prof. <a href="https://sites.google.com/view/kiminlee" target="_blank" rel="noopener">Kimin Lee</a>. 
+          I will be joining UIUC as a Visiting Scholar (Nov 2025–May 2026), advised by Prof. <a href="https://www.xiaojingliao.com/" target="_blank" rel="noopener">Xiaojing Liao</a>. 
+          Before my Ph.D., I earned both my Bachelor’s and Master’s degrees in Electrical Engineering from KAIST. </p>
+
+         <p> My research explores the security of large language models (LLMs) and agent systems, and how AI can be applied to strengthen cybersecurity. Recently, I study web-enabled/agentic risks, unlearning-based safety degradation, graph-based security analytics, and practical detection systems.</p>
+      </div>
+    </section>
+
+    <section id="publications">
+      <h2>Selected Publications</h2>
+      <div class="grid cols-1">
+        <div class="card pub">
+          <span class="tag">Security'25</span>
+          <div class="meta">
+            <a href="https://arxiv.org/pdf/2410.14569" target="_blank" rel="noopener"><b>When LLMs Go Online: The Emerging Threat of Web-Enabled LLMs</b></a><br>
+            <b>H. Kim</b>, M. Song, S.H. Na, S. Shin, K. Lee · <i>USENIX Security 2025</i>
+          </div>
+        </div>
+        <div class="card pub">
+          <span class="tag">Security'25</span>
+          <div class="meta">
+            <a href="https://nss.kaist.ac.kr/wp-content/uploads/2025/06/USENIX_Security_25_Unlearning_Safety_Alignment__Camera_Ready_.pdf" target="_blank" rel="noopener"><b>Refusal Is Not an Option: Unlearning Safety Alignment of Large Language Models</b></a><br>
+            M. Song, <b>H. Kim</b>, J. Kim, S. Shin, S. Son · <i>USENIX Security 2025</i>
+          </div>
+        </div>
+        <div class="card pub">
+          <span class="tag">NDSS'25</span>
+          <div class="meta">
+            <a href="https://arxiv.org/pdf/2409.08221" target="_blank" rel="noopener"><b>Tweezers: A Framework for Security Event Detection via Event Attribution-centric Tweet Embedding</b></a><br>
+            J. Cui, <b>H. Kim</b>, E. Jang, D. Yim, K. Kim, Y. Lee, J.W. Chung, S. Shin, X. Liao · <i>NDSS 2025</i>
+          </div>
+        </div>
+        <div class="card pub">
+          <span class="tag">NAACL'25</span>
+          <div class="meta">
+            <a href="https://arxiv.org/pdf/2409.16618" target="_blank" rel="noopener"><b>Claim-guided textual backdoor attack for practical applications</b></a><br>
+            M. Song, <b>H. Kim</b>, J. Kim, Y. Jin, S. Shin · <i>NAACL 2025 Findings</i>
+          </div>
+        </div>
+        <div class="card pub">
+          <span class="tag">NDSS'24</span>
+          <div class="meta">
+            <a href="https://arxiv.org/pdf/2301.13577" target="_blank" rel="noopener"><b>DRAINCLoG: Detecting Rogue Accounts with Illegally-obtained NFTs using Classifiers Learned on Graphs</b></a><br>
+            <b>H. Kim</b>, J. Cui, E. Jang, C. Lee, Y. Lee, J.W. Chung, S. Shin · <i>NDSS 2024</i>
+          </div>
+        </div>
+        <div class="card pub">
+          <span class="tag">Submitted</span>
+          <div class="meta">
+            <b>AutoNF: Automatic Generation of Network Functions for SmartNICs Using Multi-Agent LLM Framework</b><br>
+            M. You, <b>H. Kim</b>, J. Nam, I. Kim, M. Seo, T. Kim, S. Shin · <i>Under review at ASPLOS 2026</i>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience">
+      <h2>Experience</h2>
+      <div class="grid cols-2">
+        <div class="card">
+          <b>University of Illinois Urbana-Champaign (UIUC)</b> <br>
+          <span class="muted">Visiting Scholar, Advisor: <a href="https://www.xiaojingliao.com/" target="_blank" rel="noopener">Prof. Xiaojing Liao</a></span> <br>
+          <span class="muted">Nov 2025 – May 2026 · United States</span>
+          <ul class="clean">
+            <li>Research on AI-driven cybersecurity</li>
+          </ul>
+        </div>
+        <div class="card">
+          <b>S2W</b> <a href="https://s2w.inc/en" target="_blank" rel="noopener">(site)</a><br>
+          <span class="muted">Research Intern, Jul 2022 – Feb 2023 · South Korea</span>
+          <ul class="clean">
+            <li>NFT scam analysis; built GNN-based malicious account detection</li>
+            <li>Graph-based security event detection with contrastive learning</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="awards">
+      <h2>Honors & Awards</h2>
+      <div class="grid">
+        <div class="card">Global Advanced Cybersecurity HRD Program Grant (&gt;$25,000) — Korea Institute of Information Security &amp; Cryptology, 2025</div>
+        <div class="card">7th Financial Security Institute Research Paper Competition — Korea Financial Security Institute (K-FSI), 2023</div>
+        <div class="card">The 2023 Korea Cyber Security Paper Award — Korea National Intelligence Service, 2023</div>
+        <div class="card">5th Financial Security Institute Research Paper Competition — Korea Financial Security Institute, 2021</div>
+      </div>
+    </section>
+
+    <section id="invited">
+      <h2>Invited Talks &amp; Media Coverage</h2>
+      <div class="card">
+        <ul class="clean">
+          <li><b>Invited Talks:</b> <a href="https://www.youtube.com/watch?v=UAaOtOEH2Kg&t=750s" target="_blank" rel="noopener">Microsoft Research Cryptography</a> (Aug 2025), Mimecast (Nov 2024)</li>
+          <li><b>Media Coverage:</b> Featured in <a href="https://news.kbs.co.kr/news/pc/view/view.do?ncd=8184985" target="_blank" rel="noopener">KBS</a> (national broadcaster), and broadcast on <a href="https://www.youtube.com/watch?v=NbeOltpxCFg" target="_blank" rel="noopener">MBC</a>, <a href="https://www.youtube.com/watch?v=PVxkmYZLnks" target="_blank" rel="noopener">YTN</a>, and <a href="https://m.tjb.co.kr//news-detail.php?idxno=72894" target="_blank" rel="noopener">TJB</a>, South Korea, 2025</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- <section id="service">
+      <h2>Service</h2>
+      <div class="grid cols-3">
+        <div class="card">
+          <b>Program Committees</b>
+          <ul class="clean"><li>AE/Reviewer: USENIX Security (artifacts)</li></ul>
+        </div>
+        <div class="card">
+          <b>Reviewing</b>
+          <ul class="clean"><li>CCS, NDSS (external)</li></ul>
+        </div>
+        <div class="card">
+          <b>Open‑Source</b>
+          <ul class="clean"><li>DRAINCLoG, Tweezers</li></ul>
+        </div>
+      </div>
+    </section> -->
+
+    <footer>
+      <a href="#top">Back to top ↑</a>
+    </footer>
+  </div>
+
+  <script>
+    (function(){
+      var y=document.getElementById('year');
+      if(y) y.textContent=new Date().getFullYear();
+    })();
+  </script>
+</body>
+</html>
