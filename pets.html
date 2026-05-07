@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>🐾 Hanna's Pets</title>
+  <meta name="description" content="A little gallery of Hanna's pets — past and present" />
+  <meta name="theme-color" content="#2563eb">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{ --bg:#ffffff; --fg:#1f2937; --muted:#6b7280; --accent:#2563eb; --card:#f8fafc; --border:#e5e7eb; --link:#1d4ed8; --link-hover:#1e40af; }
+    @media (prefers-color-scheme: dark){ :root{ --bg:#0b1220; --fg:#e5e7eb; --muted:#9ca3af; --accent:#60a5fa; --card:#0f172a; --border:#1f2937; --link:#60a5fa; --link-hover:#93c5fd; } img{filter: brightness(0.98) contrast(1.02)} }
+    html{scroll-behavior:smooth}
+    body{margin:0; font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; background:var(--bg); color:var(--fg)}
+    a{color:var(--link); text-decoration:none} a:hover{text-decoration:underline; color:var(--link-hover)}
+    .wrap{max-width:1050px; margin:0 auto; padding:24px}
+    section{padding:24px 0}
+    h1{margin:24px 0 6px; font-size:32px; font-weight:800; letter-spacing:-0.01em}
+    h2{font-size:20px; margin:0 0 4px; display:flex; align-items:center; gap:8px}
+    h3{font-size:14px; margin:0 0 14px; color:var(--muted); font-weight:600; letter-spacing:0.06em; text-transform:uppercase}
+    .lede{color:var(--muted); margin:0 0 18px}
+    .muted{color:var(--muted)}
+    .pet-block{margin-bottom:36px}
+    .pet-head{display:flex; align-items:baseline; gap:10px; flex-wrap:wrap; margin-bottom:14px; padding-bottom:10px; border-bottom:1px solid var(--border)}
+    .pet-head .name{font-size:20px; font-weight:700}
+    .pet-head .meta{font-size:13px; color:var(--muted)}
+    .photo-grid{display:grid; grid-template-columns:repeat(3, 1fr); gap:12px}
+    @media (max-width:780px){ .photo-grid{grid-template-columns:repeat(2, 1fr)} }
+    .photo{aspect-ratio:1/1; border-radius:14px; border:1px solid var(--border); background:var(--card); overflow:hidden; display:flex; align-items:center; justify-content:center; position:relative; transition:transform .15s ease, box-shadow .15s ease}
+    .photo:hover{transform:translateY(-2px); box-shadow:0 8px 20px rgba(0,0,0,0.08)}
+    .photo img{width:100%; height:100%; object-fit:cover; display:block}
+    .photo .placeholder{display:flex; flex-direction:column; align-items:center; justify-content:center; gap:6px; color:var(--muted); font-size:12px; padding:8px; text-align:center}
+    .photo .placeholder .emo{font-size:36px}
+    .photo.tall{aspect-ratio:3/4}
+    .photo.wide{grid-column:span 2; aspect-ratio:2/1}
+    @media (max-width:780px){ .photo.wide{grid-column:span 2; aspect-ratio:16/9} }
+    .memorial .photo{filter:grayscale(0.15)}
+    nav.tabs{display:flex; gap:6px; padding:14px 0 0; border-bottom:1px solid var(--border)}
+    nav.tabs a{padding:8px 14px; border:1px solid var(--border); border-bottom:none; border-radius:10px 10px 0 0; background:var(--card); color:var(--fg); font-size:14px; font-weight:500; position:relative; top:1px}
+    nav.tabs a:hover{text-decoration:none; color:var(--accent)}
+    nav.tabs a.active{background:var(--bg); border-bottom:1px solid var(--bg); color:var(--accent); font-weight:600}
+    footer{border-top:1px solid var(--border); margin-top:28px; padding-top:16px; font-size:14px; color:var(--muted)}
+  </style>
+</head>
+<body id="top">
+  <div class="wrap">
+    <nav class="tabs" aria-label="Primary">
+      <a href="index.html">Home</a>
+      <a href="misc.html" class="active">Misc.</a>
+    </nav>
+
+    <h1>Pet Gallery <span aria-hidden="true">🐾</span></h1>
+    <p class="lede">A few favorite snapshots of my little family. <a href="misc.html">← Back to Misc</a></p>
+
+    <section>
+      <div class="photo-grid">
+        <div class="photo"><div class="placeholder"><span class="emo">🐶</span><span>leo-1.jpg</span></div></div>
+        <div class="photo"><div class="placeholder"><span class="emo">🐶</span><span>leo-2.jpg</span></div></div>
+        <div class="photo"><div class="placeholder"><span class="emo">🐶</span><span>leo-3.jpg</span></div></div>
+        <div class="photo wide"><div class="placeholder"><span class="emo">🐶</span><span>leo-4.jpg</span></div></div>
+        <div class="photo"><div class="placeholder"><span class="emo">🐶</span><span>leo-5.jpg</span></div></div>
+        <div class="photo"><div class="placeholder"><span class="emo">🐶</span><span>pepper-1.jpg</span></div></div>
+        <div class="photo"><div class="placeholder"><span class="emo">🐶</span><span>pepper-2.jpg</span></div></div>
+        <div class="photo"><div class="placeholder"><span class="emo">🐶</span><span>pepper-3.jpg</span></div></div>
+        <div class="photo wide"><div class="placeholder"><span class="emo">🐶</span><span>pepper-4.jpg</span></div></div>
+        <div class="photo"><div class="placeholder"><span class="emo">🐶</span><span>pepper-5.jpg</span></div></div>
+        <div class="photo"><div class="placeholder"><span class="emo">🐱</span><span>taeyang-1.jpg</span></div></div>
+        <div class="photo"><div class="placeholder"><span class="emo">🐱</span><span>taeyang-2.jpg</span></div></div>
+        <div class="photo"><div class="placeholder"><span class="emo">🐱</span><span>taeyang-3.jpg</span></div></div>
+        <div class="photo"><div class="placeholder"><span class="emo">🐱</span><span>minidan-1.jpg</span></div></div>
+        <div class="photo"><div class="placeholder"><span class="emo">🐱</span><span>minidan-2.jpg</span></div></div>
+        <div class="photo wide"><div class="placeholder"><span class="emo">🐱</span><span>minidan-3.jpg</span></div></div>
+        <div class="photo"><div class="placeholder"><span class="emo">🐱</span><span>minidan-4.jpg</span></div></div>
+        <div class="photo"><div class="placeholder"><span class="emo">🐱</span><span>minidan-5.jpg</span></div></div>
+        <div class="photo"><div class="placeholder"><span class="emo">🐶</span><span>janggun-1.jpg</span></div></div>
+        <div class="photo"><div class="placeholder"><span class="emo">🐶</span><span>janggun-2.jpg</span></div></div>
+        <div class="photo"><div class="placeholder"><span class="emo">🐶</span><span>janggun-3.jpg</span></div></div>
+      </div>
+    </section>
+
+    <footer>
+      <a href="#top">Back to top ↑</a> · <a href="misc.html">← Back to Misc</a> · <a href="index.html">Home</a>
+    </footer>
+  </div>
+</body>
+</html>
