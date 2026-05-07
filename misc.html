@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>🐻 Hanna Kim · Misc.</title>
+  <meta name="description" content="Sports, pets, and other things I love" />
+  <meta name="theme-color" content="#2563eb">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{ --bg:#ffffff; --fg:#1f2937; --muted:#6b7280; --accent:#2563eb; --card:#f8fafc; --border:#e5e7eb; --link:#1d4ed8; --link-hover:#1e40af; }
+    @media (prefers-color-scheme: dark){ :root{ --bg:#0b1220; --fg:#e5e7eb; --muted:#9ca3af; --accent:#60a5fa; --card:#0f172a; --border:#1f2937; --link:#60a5fa; --link-hover:#93c5fd; } img{filter: brightness(0.98) contrast(1.02)} }
+    html{scroll-behavior:smooth}
+    body{margin:0; font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; background:var(--bg); color:var(--fg)}
+    a{color:var(--link); text-decoration:none} a:hover{text-decoration:underline; color:var(--link-hover)}
+    .wrap{max-width:1050px; margin:0 auto; padding:24px}
+    section{padding:28px 0}
+    h1{margin:24px 0 6px; font-size:32px; font-weight:800; letter-spacing:-0.01em}
+    h2{font-size:22px; margin:0 0 6px; display:flex; align-items:center; gap:8px}
+    h3{font-size:16px; margin:0 0 10px; color:var(--muted); font-weight:600; letter-spacing:0.02em; text-transform:uppercase}
+    .lede{color:var(--muted); margin:0 0 18px}
+    .muted{color:var(--muted)}
+    .card{border:1px solid var(--border); background:var(--card); border-radius:16px; padding:18px}
+    .grid{display:grid; gap:14px}
+    .grid.cols-2{grid-template-columns:1fr 1fr}
+    .grid.cols-3{grid-template-columns:1fr 1fr 1fr}
+    @media (max-width:880px){ .grid.cols-2, .grid.cols-3{grid-template-columns:1fr}}
+    .chips{display:flex; flex-wrap:wrap; gap:8px; margin-top:6px}
+    .chip{border:1px solid var(--border); padding:6px 10px; border-radius:999px; font-size:13px; background:var(--bg)}
+    .race-table{width:100%; border-collapse:collapse; font-size:14px}
+    .race-table th, .race-table td{padding:10px 12px; text-align:left; border-bottom:1px solid var(--border)}
+    .race-table th{color:var(--muted); font-weight:500; font-size:12px; text-transform:uppercase; letter-spacing:0.04em}
+    .race-table tr:last-child td{border-bottom:none}
+    .goal{display:inline-flex; align-items:center; gap:8px; padding:8px 14px; border-radius:999px; background:var(--bg); border:1px dashed var(--accent); color:var(--accent); font-weight:600; font-size:14px}
+    .timeline{position:relative; padding-left:18px}
+    .timeline::before{content:''; position:absolute; left:5px; top:6px; bottom:6px; width:2px; background:var(--border)}
+    .timeline .item{position:relative; padding:0 0 12px}
+    .timeline .item::before{content:''; position:absolute; left:-18px; top:6px; width:10px; height:10px; border-radius:50%; background:var(--accent); border:2px solid var(--bg)}
+    .timeline .item:last-child{padding-bottom:0}
+    .timeline .when{font-size:12px; color:var(--muted); text-transform:uppercase; letter-spacing:0.04em}
+    .pet{display:flex; gap:16px; align-items:flex-start}
+    .pet .avatar{flex:0 0 96px; width:96px; height:96px; border-radius:50%; background:var(--bg); border:1px solid var(--border); display:flex; align-items:center; justify-content:center; font-size:44px; overflow:hidden}
+    .pet .avatar img{width:100%; height:100%; object-fit:cover}
+    .pet .info b{font-size:16px}
+    .pet .info .meta{color:var(--muted); font-size:13px; margin-top:2px}
+    .pet .info .note{margin-top:6px; font-size:14px}
+    .memorial .pet .avatar{filter:grayscale(0.3); opacity:0.92}
+    .more-pets{display:flex; align-items:center; gap:14px; margin-top:18px; padding:18px 20px; border:1px dashed var(--border); border-radius:16px; background:var(--card); color:var(--fg); transition:transform .15s ease, border-color .15s ease, background .15s ease}
+    .more-pets:hover{text-decoration:none; border-color:var(--accent); background:var(--bg); transform:translateY(-1px)}
+    .more-pets-emoji{font-size:28px; flex:0 0 auto}
+    .more-pets-text{display:flex; flex-direction:column; gap:2px}
+    .more-pets-text b{font-size:15px}
+    .more-pets-text .muted{font-size:13px}
+    .section-divider{height:1px; background:var(--border); margin:14px 0 18px}
+    footer{border-top:1px solid var(--border); margin-top:28px; padding-top:16px; font-size:14px; color:var(--muted)}
+    nav.tabs{display:flex; gap:6px; padding:14px 0 0; border-bottom:1px solid var(--border)}
+    nav.tabs a{padding:8px 14px; border:1px solid var(--border); border-bottom:none; border-radius:10px 10px 0 0; background:var(--card); color:var(--fg); font-size:14px; font-weight:500; position:relative; top:1px}
+    nav.tabs a:hover{text-decoration:none; color:var(--accent)}
+    nav.tabs a.active{background:var(--bg); border-bottom:1px solid var(--bg); color:var(--accent); font-weight:600}
+  </style>
+</head>
+<body id="top">
+  <div class="wrap">
+    <nav class="tabs" aria-label="Primary">
+      <a href="index.html">Home</a>
+      <a href="misc.html" class="active">Misc.</a>
+    </nav>
+
+    <h1>Misc.</h1>
+    <p class="lede">Outside of papers — what keeps me moving and the little ones who keep me company.</p>
+
+    <section id="sports">
+      <h2><span aria-hidden="true">🏃‍♀️</span> Sports</h2>
+      <p class="muted">Running, lifting, and breathing — in roughly that order these days.</p>
+
+      <div class="grid cols-1" style="margin-top:14px">
+        <div class="card">
+          <h3>Running</h3>
+          <table class="race-table" aria-label="10K race history">
+            <thead>
+              <tr><th>Date</th><th>Location</th><th>Distance</th><th>Time</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>2019.11.09</td><td>Seoul, Korea</td><td>10K</td><td>56:06</td></tr>
+              <tr><td>2026.04.25</td><td>Champaign, IL, USA</td><td>10K</td><td>57:09</td></tr>
+            </tbody>
+          </table>
+          <div class="section-divider"></div>
+          <div><span class="goal">🎯 Next goal &nbsp;·&nbsp; Half Marathon (21.1 km)</span></div>
+        </div>
+
+        <div class="card">
+          <h3>CrossFit &amp; Weightlifting</h3>
+          <div class="timeline">
+            <div class="item">
+              <div class="when">2022 · Pangyo, Korea</div>
+              <div>Started CrossFit and quickly fell in love with weightlifting along the way.</div>
+            </div>
+            <div class="item">
+              <div class="when">Paused</div>
+              <div>Had to step away due to a shoulder injury — recovery took priority.</div>
+            </div>
+            <div class="item">
+              <div class="when">2026 · Illinois, USA</div>
+              <div>Back at the box, training smarter this time around.</div>
+            </div>
+          </div>
+          <div class="chips" style="margin-top:12px">
+            <span class="chip">CrossFit</span>
+            <span class="chip">Olympic Weightlifting</span>
+          </div>
+        </div>
+
+        <div class="card">
+          <h3>Yoga</h3>
+          <p style="margin:0 0 8px">A quieter counterpart to running and lifting.</p>
+          <div class="chips">
+            <span class="chip">Ashtanga</span>
+            <span class="chip">Hatha</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="pets">
+      <h2><span aria-hidden="true">🐾</span> Pets</h2>
+      <p class="muted">My little family — past and present. Way too cute to keep to myself. 🥹</p>
+
+      <h3 style="margin-top:18px">Currently with us</h3>
+      <div class="grid cols-2">
+        <div class="card">
+          <div class="pet">
+            <div class="avatar"><img src="assets/leo.jpg" alt="Leo" /></div>
+            <div class="info">
+              <b>Leo Kim (김레오)</b>
+              <div class="meta">With us since 2022.02.27</div>
+              <div class="note">A total velcro pup — has to be physically attached to a human at all times. Jumps absurdly high. In his early days he kept us up at night by yanking out our hair to demand playtime. 😂</div>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="pet">
+            <div class="avatar"><img src="assets/pepper.jpg" alt="Pepper" /></div>
+            <div class="info">
+              <b>Pepper Kim (김후추)</b>
+              <div class="meta">With us since 2023.12.24</div>
+              <div class="note">Permanently glued to the window — the outside world is endlessly fascinating. Hair always in glorious disarray. A famously picky eater. Has a white crescent on her chest, like a moon bear. 🌙🐻</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <h3 style="margin-top:24px">Forever in our hearts <span aria-hidden="true">🌈</span></h3>
+      <div class="grid cols-3 memorial">
+        <div class="card">
+          <div class="pet">
+            <div class="avatar"><img src="assets/taeyang.jpg" alt="Taeyang" /></div>
+            <div class="info">
+              <b>Taeyang Kim (김태양)</b>
+              <div class="meta">— 2019.05</div>
+              <div class="note">Our family's very first companion. Shy, but the gentlest, most beautiful soul — those big odd-eyes mirrored a clear, pure heart.</div>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="pet">
+            <div class="avatar"><img src="assets/minidan.jpg" alt="Minidan" /></div>
+            <div class="info">
+              <b>Minidan (미니단)</b>
+              <div class="meta">— 2025.04.15</div>
+              <div class="note">A cat who thought she was a dog. Always slept curled up on our arms, and if I was still awake at her bedtime, she'd come call me to sleep with her. She lived a full 20 years with us — old and smart enough, as we liked to joke, to head off to college. 🎓</div>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="pet">
+            <div class="avatar"><img src="assets/janggun.jpg" alt="Janggun" /></div>
+            <div class="info">
+              <b>Janggun Kim (김장군)</b>
+              <div class="meta">— 2020.11</div>
+              <div class="note">Bounced around so lightly he looked like a puff of cotton candy rolling across the floor. Mom's little shadow — you could almost never find one without the other.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <a class="more-pets" href="pets.html">
+        <span class="more-pets-emoji" aria-hidden="true">🐾</span>
+        <span class="more-pets-text">
+          <b>Want to see more of them?</b>
+          <span class="muted">Step into the full gallery →</span>
+        </span>
+      </a>
+    </section>
+
+    <footer>
+      <a href="#top">Back to top ↑</a> · <a href="index.html">← Back to Home</a>
+    </footer>
+  </div>
+</body>
+</html>
