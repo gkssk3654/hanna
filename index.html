@@ -43,6 +43,16 @@
     .pub .tag{justify-self:start; font-size:12px; border:1px solid var(--border); padding:4px 8px; border-radius:999px; background:var(--bg)}
     .pub .meta{font-size:14px}
     .pub b{font-weight:600}
+    .more-pubs{margin-top:16px}
+    .more-pubs > summary{cursor:pointer; list-style:none; display:inline-flex; align-items:center; gap:8px;
+      font-size:14px; font-weight:600; color:var(--muted); padding:8px 14px; border:1px solid var(--border);
+      border-radius:999px; background:var(--card); user-select:none}
+    .more-pubs > summary::-webkit-details-marker{display:none}
+    .more-pubs > summary::before{content:'▸'; font-size:11px; transition:transform .15s ease}
+    .more-pubs[open] > summary::before{transform:rotate(90deg)}
+    .more-pubs > summary:hover{color:var(--accent); border-color:var(--accent)}
+    .more-pubs .count{font-weight:400; opacity:.75}
+    .more-pubs > .grid{margin-top:14px}
     footer{border-top:1px solid var(--border); margin-top:28px; padding-top:16px; font-size:14px; color:var(--muted)}
     nav.tabs{display:flex; gap:6px; padding:14px 0 0; border-bottom:1px solid var(--border)}
     nav.tabs a{padding:8px 14px; border:1px solid var(--border); border-bottom:none; border-radius:10px 10px 0 0; background:var(--card); color:var(--fg); font-size:14px; font-weight:500; position:relative; top:1px}
@@ -71,9 +81,9 @@
           </a>
         </div>
         <h1>Hanna Kim</h1>
-        <p>Ph.D. student, KAIST (EE), advised by Prof. <a href="https://nss.kaist.ac.kr/" target="_blank" rel="noopener">Seongwon Shin</a></p>
+        <p>Ph.D. student, KAIST (EE), advised by Prof. <a href="https://nss.kaist.ac.kr/" target="_blank" rel="noopener">Seungwon Shin</a></p>
         <div class="badges">
-          <span class="badge">LLM Security</span><span class="badge">AI for Cybersecurity</span><span class="badge">Data-driven Security</span>
+          <span class="badge">LLM Security</span><span class="badge">AI for Cybersecurity</span><span class="badge">Interpretability &amp; Failure Analysis</span>
         </div>
       </div>
     </header>
@@ -81,17 +91,23 @@
     <section id="about">
       <h2>About</h2>
       <div class="card">
-        <p>Hello, I'm Hanna. I’m a third-year Ph.D. student at KAIST, advised by Prof. <a href="https://nss.kaist.ac.kr/" target="_blank" rel="noopener">Seongwon Shin</a> and working closely with Prof. <a href="https://sites.google.com/view/kiminlee" target="_blank" rel="noopener">Kimin Lee</a>. 
-          I will be joining UIUC as a Visiting Scholar (Nov 2025–May 2026), advised by Prof. <a href="https://www.xiaojingliao.com/" target="_blank" rel="noopener">Xiaojing Liao</a>. 
-          Before my Ph.D., I earned both my Bachelor’s and Master’s degrees in Electrical Engineering from KAIST. </p>
+        <p>Hello, I’m Hanna. I’m a fourth-year Ph.D. student at KAIST, advised by Prof. <a href="https://nss.kaist.ac.kr/" target="_blank" rel="noopener">Seungwon Shin</a>.
+          Before my Ph.D., I earned both my Bachelor’s and Master’s degrees in Electrical Engineering from KAIST.</p>
 
-         <p> My research explores the security of large language models (LLMs) and agent systems, and how AI can be applied to strengthen cybersecurity. Recently, I study web-enabled/agentic risks, unlearning-based safety degradation, graph-based security analytics, and practical detection systems.</p>
+        <p>My research lies at the intersection of large language models and cybersecurity. In particular, I study how LLMs transform security-relevant information and how these transformations shape both attack and defense. On the offensive side, I examine how advances in LLM capabilities can make existing information more useful for cyberattacks. On the defensive side, I study how reliably LLMs can recover and reason over security-relevant information, and investigate the systematic failure modes and underlying mechanisms that limit their reliability.</p>
       </div>
     </section>
 
     <section id="publications">
       <h2>Selected Publications</h2>
       <div class="grid cols-1">
+        <div class="card pub">
+          <span class="tag">Submitted</span>
+          <div class="meta">
+            <b>ScriptIOC-Bench: A Benchmark for Recognizing Actionable Threat Intelligence from Script-Based Malware using LLMs</b><br>
+            <b>H. Kim</b>, J. Cui, M. Song, H. Heo, S. Shin, K. Lee, X. Liao · <i>Under review at IEEE S&amp;P 2027</i>
+          </div>
+        </div>
         <div class="card pub">
           <span class="tag">Security'25</span>
           <div class="meta">
@@ -104,6 +120,25 @@
           <div class="meta">
             <a href="https://nss.kaist.ac.kr/wp-content/uploads/2025/06/USENIX_Security_25_Unlearning_Safety_Alignment__Camera_Ready_.pdf" target="_blank" rel="noopener"><b>Refusal Is Not an Option: Unlearning Safety Alignment of Large Language Models</b></a><br>
             M. Song, <b>H. Kim</b>, J. Kim, S. Shin, S. Son · <i>USENIX Security 2025</i>
+          </div>
+        </div>
+        <div class="card pub">
+          <span class="tag">NDSS'24</span>
+          <div class="meta">
+            <a href="https://arxiv.org/pdf/2301.13577" target="_blank" rel="noopener"><b>DRAINCLoG: Detecting Rogue Accounts with Illegally-obtained NFTs using Classifiers Learned on Graphs</b></a><br>
+            <b>H. Kim</b>, J. Cui, E. Jang, C. Lee, Y. Lee, J.W. Chung, S. Shin · <i>NDSS 2024</i>
+          </div>
+        </div>
+      </div>
+
+      <details class="more-pubs">
+        <summary>Other publications <span class="count">(6)</span></summary>
+        <div class="grid cols-1">
+        <div class="card pub">
+          <span class="tag">Submitted</span>
+          <div class="meta">
+            <a href="https://arxiv.org/abs/2601.21533" target="_blank" rel="noopener"><b>ARGORA: Orchestrated Argumentation for Causally Grounded LLM Reasoning and Decision Making</b></a><br>
+            Y. Jin, <b>H. Kim</b>, K. Kim, C. Lee, S. Shin &middot; <i>Under review at NeurIPS 2026</i>
           </div>
         </div>
         <div class="card pub">
@@ -121,20 +156,28 @@
           </div>
         </div>
         <div class="card pub">
-          <span class="tag">NDSS'24</span>
-          <div class="meta">
-            <a href="https://arxiv.org/pdf/2301.13577" target="_blank" rel="noopener"><b>DRAINCLoG: Detecting Rogue Accounts with Illegally-obtained NFTs using Classifiers Learned on Graphs</b></a><br>
-            <b>H. Kim</b>, J. Cui, E. Jang, C. Lee, Y. Lee, J.W. Chung, S. Shin · <i>NDSS 2024</i>
-          </div>
-        </div>
-        <div class="card pub">
           <span class="tag">Submitted</span>
           <div class="meta">
             <b>AutoNF: Automatic Generation of Network Functions for SmartNICs Using Multi-Agent LLM Framework</b><br>
             M. You, <b>H. Kim</b>, J. Nam, I. Kim, M. Seo, T. Kim, S. Shin · <i>Under review at ASPLOS 2026</i>
           </div>
         </div>
-      </div>
+        <div class="card pub">
+          <span class="tag">arXiv'23</span>
+          <div class="meta">
+            <a href="https://arxiv.org/abs/2303.09393" target="_blank" rel="noopener"><b>A Deep Dive into NFT Whales: A Longitudinal Study of the NFT Trading Ecosystem</b></a><br>
+            N.H. Park, <b>H. Kim</b>, C. Lee, C. Yoon, S. Lee, Y. Jin, S. Shin · <i>arXiv preprint, 2023</i>
+          </div>
+        </div>
+        <div class="card pub">
+          <span class="tag">IEICE'22</span>
+          <div class="meta">
+            <b>A Large-Scale Bitcoin Abuse Measurement and Clustering Analysis Utilizing Public Reports</b><br>
+            J. Choi, J. Kim, M. Song, <b>H. Kim</b>, N. Park, M. Seo, Y. Jin, S. Shin · <i>IEICE Transactions on Information and Systems, 2022</i>
+          </div>
+        </div>
+        </div>
+      </details>
     </section>
 
     <section id="experience">
