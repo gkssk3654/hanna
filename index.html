@@ -83,7 +83,7 @@
         <h1>Hanna Kim</h1>
         <p>Ph.D. student, KAIST (EE)</p>
         <div class="badges">
-          <span class="badge">LLM Security</span><span class="badge">AI for Cybersecurity</span><span class="badge">Interpretability &amp; Failure Analysis</span>
+          <span class="badge">LLM Security</span><span class="badge">AI for Cybersecurity</span><span class="badge">Evaluation &amp; Benchmarks</span><span class="badge">Interpretability &amp; Failure Analysis</span>
         </div>
       </div>
     </header>
@@ -93,7 +93,7 @@
       <div class="card">
         <p>Hello, I’m Hanna. I’m a fourth-year Ph.D. student at KAIST, advised by Prof. <a href="https://nss.kaist.ac.kr/" target="_blank" rel="noopener">Seungwon Shin</a>. I also earned my Bachelor’s and Master’s degrees in Electrical Engineering at KAIST.</p>
 
-        <p>I study how large language models reshape information for operational use in cybersecurity, and how those changes shape both attack and defense. On the offensive side, I examine how advances in LLM capabilities make existing information more useful for cyberattacks. On the defensive side, I ask how reliably models recover and reason over that information, and investigate the systematic failure modes and underlying mechanisms that limit their reliability.</p>
+        <p>I study how large language models reshape information for operational use in cybersecurity, and how those changes shape both attack and defense. On the offensive side, I examine how advances in LLM capabilities make existing information more useful for cyberattacks. On the defensive side, I build benchmarks and evaluation frameworks that measure how reliably models recover and reason over that information, investigate the systematic failure modes and underlying mechanisms that limit their reliability, and develop mitigations ranging from inference-time interventions to post-training.</p>
       </div>
     </section>
 
@@ -130,7 +130,7 @@
           <span class="tag">Submitted</span>
           <div class="meta">
             <a href="https://arxiv.org/abs/2601.21533" target="_blank" rel="noopener"><b>ARGORA: Orchestrated Argumentation for Causally Grounded LLM Reasoning and Decision Making</b></a><br>
-            Y. Jin, <b>H. Kim</b>, K. Kim, C. Lee, S. Shin &middot; <i>Under review at NeurIPS 2026</i>
+            Y. Jin, <b>H. Kim</b>, K. Kim, C. Lee, S. Shin &middot; <i>Under review at ICLR 2027</i>
           </div>
         </div>
         <div class="card pub">
@@ -187,6 +187,8 @@
           <span class="muted">Visiting Scholar, Advisor: <a href="https://engineering.cmu.edu/directory/bios/bauer-lujo.html" target="_blank" rel="noopener">Prof. Lujo Bauer</a></span> <br>
           <span class="muted">Sep 2026 – Mar 2027 · United States</span>
           <ul class="clean">
+            <li>Investigating reliability issues that arise when LLMs are applied to defensive cybersecurity tasks</li>
+            <li>Mitigating these failures through post-training with DPO</li>
             <li>I&rsquo;ll be in Pittsburgh through March 2027 — if you&rsquo;re around, I&rsquo;d love to meet.</li>
           </ul>
         </div>
@@ -196,7 +198,7 @@
           <span class="muted">Nov 2025 – May 2026 · United States</span>
           <ul class="clean">
             <li>Studied how reliably LLMs extract actionable threat intelligence from real-world malicious scripts, and developed a failure taxonomy, finding a distinct error profile for each model</li>
-            <li>Built ScriptIOC-Bench to measure this, and improved a small open-weight model through knowledge distillation followed by GRPO, with rewards designed around exact indicator recovery</li>
+            <li>Built ScriptIOC-Bench to measure this, and improved a small open-weight model through knowledge distillation followed by post-training using GRPO, with rewards designed around exact indicator recovery</li>
           </ul>
         </div>
         <div class="card">
